@@ -18,11 +18,17 @@
       width: 100%;
       font-weight: bold;
       
+      &__user-name {
+        font-size: 16px;
+      }
       &__menu {
         display: flex;
       }
       &__menu__new-group{
         margin-left: 0.3rem;
+      }
+      &__menu__edit-user{
+        margin-left: 5px;
       }
       &__icon{
         color: white;
@@ -41,9 +47,11 @@
     &__group-name {
       font-size: 15px;
       margin-bottom: 5px;
+      color: white;
 }
     &__latest-message {
   font-size: 11px;
+  color: white;
 }
 }
 }

@@ -7,21 +7,12 @@
       .main-header__edit-btn Edit
   .messages
     .message
-      .message__upper-info
-        %p.message__upper-info__talker ww@ww
-        %p.message__upper-info__date 2020/01/19(Sun) 21:12:37
-      %p.message__text お疲れ
-    .message
-      .message__upper-info
-        %p.message__upper-info__talker ww@ww
-        %p.message__upper-info__date 2020/01/19(Sun) 21:12:37
-      %p.message__text お疲れ
+      = render @messages
   .form
-    %from.new-message
-      .input-box
-        = form_for [@group, @message] do |f|
+    .new-messages
+      = form_for [@group, @message] do |f|
         = f.text_field :content, class: 'form__message', placeholder: 'type a message'
-        .form__mask
+        .input_box
           = f.label :image, class: 'form__mask__image' do
             = icon('fas', 'image', class: 'icon')
             = f.file_field :image, class: 'hidden'

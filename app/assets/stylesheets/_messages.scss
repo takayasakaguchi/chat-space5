@@ -128,31 +128,32 @@
     height: 90px;
     padding: 20px 40px;
     background-color: #ddd;
-
-  .new-message{
-    display: flex;
-    .input-box {
+  .new-messages{
       position: relative;
       width: 100%;
     }
-    .input-box__text {
+  .new_message{
+    display: flex;
+  }
+    
+    .form__message {
       height: 50px;
-      width: 100%;
+      width: 550px;
       padding: 0 40px 0 10px;
       color: #434a54;
       border-style: none;
     }
-    .input-box__image {
+    .form__mask__image {
       font-size: 1.3rem;
       position: absolute;
       top: 10px;
-      right: 10px;
+      right: 125px;
       cursor: pointer;
   }
-    .input-box__image__file {
+    .hidden {
     display: none;
   }
-    .submit-btn {
+    .form__submit {
     width: 100px;
     height: 50px;
     padding: 0 30px;
@@ -163,5 +164,7 @@
   }
   }
 }
-}
+
+
+
   

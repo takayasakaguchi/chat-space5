@@ -1,9 +1,13 @@
 .chat-main
   .main-header
     .main-header__left-box
-      %h2.main-header__left-box__current-group po
-      %ul.main-header__left-box__member-list Member：name
-    = link_to "#",class:"main-header__left-box__edit-buttn" do
+      %h2.main-header__left-box__current-group 
+        = @group.name
+      %ul.main-header__left-box__member 
+        member:
+        %li.main-header__left-box__member-list 
+          = @group.users.name
+    = link_to edit_group_path(@group.id),class:"main-header__left-box__edit-buttn" do
       .main-header__edit-btn Edit
   .messages
     .message

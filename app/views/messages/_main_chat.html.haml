@@ -5,8 +5,7 @@
         = @group.name
       %ul.main-header__left-box__member 
         member:
-        %li.main-header__left-box__member-list 
-          = @group.users.name
+        %li.main-header__left-box__member-list ss
     = link_to edit_group_path(@group.id),class:"main-header__left-box__edit-buttn" do
       .main-header__edit-btn Edit
   .messages

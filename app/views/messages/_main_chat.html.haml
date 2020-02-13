@@ -4,8 +4,8 @@
       %h2.main-header__left-box__current-group 
         = @group.name
       %ul.main-header__left-box__member 
-        member:
-        %li.main-header__left-box__member-list ss
+        membaer:
+        %li.main-header__left-box__member-list  = user.name
     = link_to edit_group_path(@group.id),class:"main-header__left-box__edit-buttn" do
       .main-header__edit-btn Edit
   .messages

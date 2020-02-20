@@ -17,8 +17,8 @@ require 'capistrano/deploy'
 #
 # require 'capistrano/rvm' #rvmならこちらを外す
 require 'capistrano/rbenv' #rbenvならこちらを外す
-set :rbenv_type, :system # or :system, depends on your rbenv setup
-set :rbenv_ruby, '2.5.1' #rubyのバージョンを指定
+# set :rbenv_type, :system # or :system, depends on your rbenv setup
+# set :rbenv_ruby, '2.5.1' #rubyのバージョンを指定
 # require 'capistrano/chruby'
 require 'capistrano/bundler'
 require 'capistrano/rails/assets'

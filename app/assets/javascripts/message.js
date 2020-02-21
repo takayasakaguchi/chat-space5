@@ -41,7 +41,7 @@ $(function(){
     } else if (message.image) {
       //同様に、data-idが反映されるようにしている
       var html = `<div class="message" data-message-id=${message.id}>
-        <div class="upper-message">
+        <div class="message__upper-info">
           <div class="message__upper-info__talker">
             ${message.user_name}
           </div>

@@ -4,8 +4,9 @@
       %h2.main-header__left-box__current-group 
         = @group.name
       %ul.main-header__left-box__member 
-        membaer:
-        %li.main-header__left-box__member-list  = user.name
+        - @group.users.each do |gname|
+          %li.main-header__left-box__member-list
+            = gname.name
     = link_to edit_group_path(@group.id),class:"main-header__left-box__edit-buttn" do
       .main-header__edit-btn Edit
   .messages
